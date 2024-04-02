@@ -1,11 +1,11 @@
 /** @format */
 import React, { useEffect, useState } from 'react';
-import styles from './Experience.module.css';
+import styles from './Competences.module.css';
 import skills from '../../data/skills.json';
 import historyFr from '../../data/history.fr.json'; // Importez le fichier JSON en français
 import { getImageUrl } from '../../utils';
 
-export const Experience = () => {
+export const Competences = () => {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
@@ -13,8 +13,8 @@ export const Experience = () => {
     setHistory(historyFr.history || []);
   }, []);
   return (
-    <section className={styles.container} id='experience'>
-      <h2 className={styles.title}>Experience</h2>
+    <section className={styles.container} id='competences'>
+      <h2 className={styles.title}>Competences</h2>
       <div className={styles.content}>
         {/* Render Skills */}
         <div className={styles.skills}>

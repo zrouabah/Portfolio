@@ -3,21 +3,23 @@ import styles from './Navbar.module.css';
 import projectsData from '../../locales/translation'; 
 import { getImageUrl } from '../../utils';
 
-const Hero = () => {
-  const heroData = projectsData.hero;
+const Apropos = () => {
+  const aproposData = projectsData.apropos;
 
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>{heroData.title}</h1>
-        <p className={styles.description}>{heroData.description}</p>
+      <h1 className={styles.title}>
+          Bienvenue ! <br /> Je suis Zineb
+        </h1>
+        <p className={styles.description}>{aproposData.description}</p>
 
 
       </div>
-      <img src={getImageUrl('photo_portfolio/photo_portfolio.jpg')} alt={heroData.imageAlt} className={styles.portfolioImg} />
+      <img src={getImageUrl('photo_portfolio/photo_portfolio.jpg')} alt={aproposData.imageAlt} className={styles.portfolioImg} />
       
     </section>
   );
 };
 
-export default Hero;
+export default Apropos;

@@ -1,29 +1,17 @@
 {
-  "hero": {
-    "title": "Bienvenue ! Je suis Zineb ROUABAH",
+  "apropos": {
+    "title": "Bienvenue ! Je suis Zineb",
     "description": "Jeune développeuse web, je suis passionnée par la création d'applications web modernes et dynamiques. Ma spécialité réside dans l'utilisation de technologies telles que React et NodeJS pour donner vie à des idées innovantes et offrir des expériences utilisateur exceptionnelles.",
     "contactBtn": "Me Contacter",
-    "imageAlt": "Image de moi en tant que héros"
+    "imageAlt": "mon image"
   },
   "navbar": {
     "about": "À propos",
-    "experience": "Expérience",
+    "competences": "Compétences",
     "projects": "Projets",
     "contact": "Contact"
   },
-  "about": {
-    "title": "À propos",
-    "altText": "Moi pointant vers les utilisateurs",
-    "cursorAltText": "Icône de curseur",
-    "frontendTitle": "Développeur Frontend",
-    "frontendDescription": "Je suis un développeur frontend avec de l'expérience dans la construction de sites réactifs et optimisés",
-    "serverAltText": "Icône du serveur",
-    "backendTitle": "Développeur Backend",
-    "backendDescription": "J'ai de l'expérience dans le développement de systèmes backend rapides et optimisés ainsi que des APIs",
-    "uiAltText": "Icône de l'interface utilisateur",
-    "uiTitle": "Designer UI",
-    "uiDescription": "J'ai conçu plusieurs pages de destination et créé des systèmes de conception"
-  },
+ 
   "contact": {
     "title": "Contact",
     "description": "N'hésitez pas à me contacter !",

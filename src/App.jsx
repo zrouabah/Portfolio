@@ -3,9 +3,8 @@
 import React from 'react';
 import styles from './App.module.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { About } from './components/About/About';
 import { Contact } from './components/Contact/Contact';
-import { Experience } from './components/Experience/Experience';
+import { Competences } from './components/Competences/Competences';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import { Projects } from './components/Projects/Projects';
@@ -16,9 +15,8 @@ function App() {
       <div className={styles.App}>
          <Header />
         <Navbar />
-        <Experience />
+        <Competences />
         <Projects />
-        <About />
         <Contact />
       </div>
     </Router>
