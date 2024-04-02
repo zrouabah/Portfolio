@@ -1,0 +1,71 @@
+/** @format */
+
+@import '../../vars.css';
+
+.container {
+  color: var(--color-text);
+  margin-top: 120px;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 60px 10%;
+  gap: 10px;
+}
+
+.text h2 {
+  font-size: 82px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.text p {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 20px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.link a:hover {
+  color: var(--color-primary);
+}
+
+.link a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text p {
+    font-size: 30px;
+  }
+
+  .links {
+    align-items: center;
+    margin-top: 32px;
+  }
+}

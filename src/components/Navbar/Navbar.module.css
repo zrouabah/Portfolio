@@ -1,0 +1,117 @@
+/** @format */
+
+@import '../../vars.css';
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 49px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 900;
+  padding-top: 100px;
+  font-family: var(--font-family);
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  background-clip: text; /* Standard property */
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  font-size: 20px;
+  font-family: var(--font-family);
+  margin-bottom: 52px;
+  letter-spacing: 1.7px;
+  padding-top: 20px;
+}
+
+.content .contacts{
+  display: flex;
+  gap: 30px;
+
+}
+.contact :hover{
+  transform: scale(1.2);
+  transition: transform 0.4s ease;
+  color: rgba(255, 255, 255, 0.813);
+}
+.container .contact{
+  display: flex;
+  justify-content: center;
+}
+.iconFrame {
+  border: 2px solid blue;
+  padding: 5px; 
+  border-radius: 10px; 
+  display: inline-flex; /* Utiliser flexbox */
+  align-items: center; /* Centrer les éléments horizontalement */
+  justify-content: center; /* Centrer les éléments verticalement */
+  margin-right: 10px; 
+  background: blue;  
+  text-align: center; /* Centrer le texte */
+}
+
+.iconFrame img {
+  margin-right: 5px; 
+  width: 30px;
+}
+
+.iconText {
+  font-size: 14px; 
+  width: 50px;
+  color: white;
+}
+
+.portfolioImg {
+  width: 30%;
+  margin: 60px;
+  z-index: 1;
+border-radius: 12%;
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+
+
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    align-items: center;
+  }
+  .description {
+    letter-spacing: 1px;
+  }
+}

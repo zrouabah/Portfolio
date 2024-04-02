@@ -1,0 +1,21 @@
+{
+  "projects": [
+    {
+      "title": "KASA",
+      "imageSrc": "projects/Kasa.png",
+      "description": "Un site Web innovant de location d'appartements entre particuliers, bénéficiant d'une navigation fluide et d'une mise en page réactive pour une expérience optimale sur tous les appareils.",
+      "skills": ["React", "Node", "Sass"],
+      "demo": "https://ob-kasa.vercel.app/",
+      "source": "https://github.com/Osis6/kasa.git"
+    },
+  
+    {
+      "title": "PROJET SEO",
+      "imageSrc": "projects/ninacar.png",
+      "description": "Le débogage et l'optimisation du site Nina Carducci impliquent des améliorations approfondies des performances, notamment la compression d'images et la minification de fichiers.",
+      "skills": ["JavaScript", "HTML", "CSS"],
+      "demo": "https://ob-carducci.vercel.app/",
+      "source": "https://github.com/Osis6/Nina-Carducci"
+    }
+  ]
+}
