@@ -1,0 +1,74 @@
+/* font roboto */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;700&display=swap');
+/* font lobster */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.container{
+  width: 100%;
+  height: 500px;
+  background-image: url(assets/photo_portfolio/bg.png);
+  background-size: cover;
+}
+.textSection{
+  position: absolute;
+  left: 9%;
+  top: 130px;
+  line-height: 0px;
+}
+
+.textSection p:first-child{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.textSection p:nth-child(2){
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  margin: 0;
+}
+
+.textSection p:nth-child(3){
+  font-size: 30px;
+  font-weight: bold;
+  line-height: normal;
+  font-weight: 100;
+}
+
+.btn-here{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #2d3436;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.btn-here:hover{
+  background-color: #2d3436;
+  color: whitesmoke;
+}
+
+.btn-download{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #2d3436;
+  font-size: 11px;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-download:hover{
+  background-color: transparent;
+  color: black;
+  border: 1px solid #2d3436;
+}
+
+.model{
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  height: 400px;
+}

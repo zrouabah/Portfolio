@@ -14,7 +14,7 @@ const Header = () => {
     <nav className={styles.header}>
       {/* Logo */}
       <a id="logo" className={styles.logo} href="/">
-        <img src={getImageUrl('nav/logo.webp')} alt="logo" />
+        zineb ROUABAH
       </a>
 
       {/* Menu */}

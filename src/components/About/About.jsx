@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Navbar.module.css';
+import styles from './About.module.css';
 import projectsData from '../../locales/translation'; 
 import { getImageUrl } from '../../utils';
 
@@ -16,8 +16,7 @@ const Apropos = () => {
 
 
       </div>
-      <img src={getImageUrl('photo_portfolio/photo_portfolio.jpg')} alt={aproposData.imageAlt} className={styles.portfolioImg} />
-      
+     
     </section>
   );
 };

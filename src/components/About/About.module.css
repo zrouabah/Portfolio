@@ -30,16 +30,39 @@
   -webkit-background-clip: text;
   background-clip: text; /* Standard property */
   -webkit-text-fill-color: transparent;
+  opacity: 0; /* Rendre le texte initiallement invisible */
+  animation: fadeInTitle 1s ease forwards;
 }
-
+@keyframes fadeInTitle {
+  from {
+    opacity: 0;
+    transform: translateX(-100%); /* Déplacer le texte complètement hors de l'écran à gauche */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Annuler le déplacement */
+  }
+}
 .description {
   font-size: 20px;
   font-family: var(--font-family);
   margin-bottom: 52px;
   letter-spacing: 1.7px;
   padding-top: 20px;
+  opacity: 0; /* Rendre la description initialement invisible */
+  animation: slideInDescription 1s ease forwards; 
+  animation-delay: 0.5s
 }
-
+@keyframes slideInDescription {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Déplacer la description complètement hors de l'écran à droite */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Annuler le déplacement */
+  }
+}
 .content .contacts{
   display: flex;
   gap: 30px;
@@ -86,17 +109,18 @@ border-radius: 12%;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  opacity: 0; /* Rendre l'image initialement invisible */
+  animation: slideInImage 1s ease forwards; 
 }
 
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
+@keyframes slideInImage {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Déplacer l'image complètement hors de l'écran à droite */
   }
-  50% {
-    transform: translate(0, 10px);
-  }
-  100% {
-    transform: translate(0, -0px);
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Annuler le déplacement */
   }
 }
 
