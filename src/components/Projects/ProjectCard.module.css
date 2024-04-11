@@ -1,10 +1,11 @@
 /** @format */
 
 @import '../../vars.css';
-
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center; 
+  align-items: center;
   border-radius: 10px;
   background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
   box-shadow: 0 16px 14px 0 #04152d;
@@ -15,6 +16,8 @@
 .image {
   margin-bottom: 26px;
   border-radius: 10px;
+  max-width: 100%; 
+  height: auto; 
 }
 
 .title {
@@ -33,19 +36,35 @@
   margin-top: 14px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 6px;
   list-style: none;
 }
 
 .skill {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 400;
   border-radius: 100px;
   background: var(--color-dark);
-  padding: 2px 22px;
+  padding: 10px 22px;
 }
-
+.expandButton{
+  width: 100%; 
+  background-color: #576cbc;
+  padding: 10px 22px;
+  margin-top: 15px;
+  font-size: 20px;
+  color: wheat;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.expandButton:hover{
+  color: var(--color-bg);
+  background: var(--btn-gradient);
+  transition: transform 0.4s ease;
+  color: var(--color-bg);
+}
 .links {
   width: 100%;
   margin-top: 26px;
@@ -56,16 +75,23 @@
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   border-radius: 10px;
-  background: var(--color-primary);
-  padding: 1px 22px;
+  background: rebeccapurple;
+  padding: 10px 22px;
+  width: 100%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+.link:last-child {
+  margin-right: 0; 
 }
 .link:hover {
   color: var(--color-bg);
   background: var(--btn-gradient);
   transform: scale(1.2);
   transition: transform 0.4s ease;
-  border-radius: 50px;
+
 }

@@ -1,6 +1,4 @@
-/** @format */
-
-import React from 'react';
+import React, { useState } from 'react';
 
 import styles from './ProjectCard.module.css';
 import { getImageUrl } from '../../utils';
@@ -8,6 +6,12 @@ import { getImageUrl } from '../../utils';
 export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
 }) => {
+  const [showDescription, setShowDescription] = useState(false);
+
+  const toggleDescription = () => {
+    setShowDescription(!showDescription);
+  };
+
   return (
     <div className={styles.container}>
       <img
@@ -16,7 +20,7 @@ export const ProjectCard = ({
         className={styles.image}
       />
       <h3 className={styles.title}>{title}</h3>
-      <p className={styles.description}>{description}</p>
+      
       <ul className={styles.skills}>
         {skills.map((skill, id) => {
           return (
@@ -34,6 +38,15 @@ export const ProjectCard = ({
           Source
         </a>
       </div>
+      <button 
+      onClick={toggleDescription} className={styles.expandButton}>
+        {showDescription ? 'En savoir plus' : 'En savoir plus'}
+      </button>
+      {showDescription && (
+        <div className={styles.descriptionCollapse}>
+          <p className={styles.description}>{description}</p>
+        </div>
+      )}
     </div>
   );
 };
