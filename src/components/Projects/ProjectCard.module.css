@@ -101,3 +101,19 @@
   transition: transform 0.4s ease;
 
 }
+@media screen and (max-width: 830px){
+  .skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.skill{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 18px;
+}
+.link{
+  color: blueviolet;
+}
+}

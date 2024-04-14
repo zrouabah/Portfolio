@@ -78,10 +78,14 @@
   .model{
 display: none;
   }
-  .textSection{
-    height: 75px;
+  .textSection p:nth-child(2){
+
+  font-size: 30px;
   }
   .container{
-    height: 400px;
+    height: 350px;
+    width: 50%;
+  
+    margin-top: 10px;
   }
 }

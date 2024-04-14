@@ -14,7 +14,7 @@ const Header = () => {
     <nav className={styles.header}>
       {/* Logo */}
       <a id="logo" className={styles.logo} href="/">
-        zineb ROUABAH
+        zineb rouabah
       </a>
 
       {/* Menu */}
