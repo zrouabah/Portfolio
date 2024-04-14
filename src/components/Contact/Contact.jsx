@@ -30,8 +30,7 @@ export const Contact = () => {
             <i className={iconClicked.github ? `${styles.clicked} fa-brands fa-github` : 'fa-brands fa-github'}></i>
           </a>
         </li>
-      </ul>
-     
+      </ul>   
     </footer>
   );
 };
