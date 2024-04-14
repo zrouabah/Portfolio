@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -10,4 +10,6 @@ html {
 }
 body{
   background-color: white;
+  font-family: 'Roboto', sans-serif;
+
 }

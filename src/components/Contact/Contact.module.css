@@ -1,24 +1,31 @@
-/** @format */
-
-@import '../../vars.css';
-
 .container {
-  color: var(--color-text);
-  margin-top: 120px;
-  background: #111;
+  width: 100%;
+  height: 100px;
+  background-color: #dfe6e9;
   display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0;
   
-  justify-content: space-between;
-  width: 100vw;
-  padding: 60px 10%;
- height: 92px;
+  margin-top: 10px;
+ 
+ 
 }
 
 .text h2 {
-  font-size: 82px;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: gray;
+  margin-left: 10%;
+  margin-right: 10%;
   font-weight: 700;
-  letter-spacing: 4px;
+  letter-spacing: 1.75px;
 }
+
 
 .text p {
   font-size: 40px;
@@ -27,9 +34,10 @@
 
 .links {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   list-style: none;
   gap: 20px;
+  padding-right: 9%;
 }
 
 .link {
@@ -41,11 +49,18 @@
   color: var(--color-primary);
 }
 
-.link a {
-  color: var(--color-text);
+.link i {
+  color: black;
   text-decoration: none;
   font-size: 17px;
   letter-spacing: 1.5px;
+  background-color: #b2bec3;
+  padding: 10px; /* Ajoute un peu de rembourrage pour l'espace autour de l'icône */
+  border-radius: 50%; /* Rend l'icône circulaire en ajustant le bord */
+}
+.link i.clicked {
+  color: mediumslateblue;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 830px) {

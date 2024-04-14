@@ -1,8 +1,7 @@
 {
   "apropos": {
     "title": "",
-    "description": "Jeune développeuse web, je suis passionnée par la création d'applications web modernes et dynamiques. Ma spécialité réside dans l'utilisation de technologies telles que React et NodeJS pour donner vie à des idées innovantes et offrir des expériences utilisateur exceptionnelles.",
-    "contactBtn": "Me Contacter",
+    "description": "Jeune développeuse web junior, passionnée par la création d'applications web modernes et dynamiques. Spécialisée dans le développement frontend, formée chez OpenClassrooms. Ma spécialité réside dans l'utilisation de technologies telles que React.js pour concevoir des interfaces utilisateur intuitives et attrayantes. Mon objectif est de donner vie à des idées innovantes et d'offrir des expériences utilisateur exceptionnelles grâce à mon expertise en développement frontend.",
     "imageAlt": "mon image"
   },
   "navbar": {

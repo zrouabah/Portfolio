@@ -28,7 +28,7 @@ const Header = () => {
         />
         
         <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}>
-          <li><a href="/">accueil</a></li>
+          <li><a href="/">Accueil</a></li>
           <li><a href="#competences">Compétences</a></li>
           <li><a href="#projects">Projets</a></li>
           <li><a href="#contact">Contact</a></li>

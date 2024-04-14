@@ -1,28 +1,18 @@
 @import '../../vars.css';
 
 .header {
+  position: fixed; /* Rend le header fixe en haut */
+  top: 0; /* Positionne le header en haut de la page */
+  height: 61px; 
+  padding-right: 9%;
+  justify-content: space-between;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2); /* Augmente l'ombre */
+  width: 100%;
   display: flex;
   align-items: center;
-  background: #111;
-  color: #FFF;
-  height: 92px; 
-  padding: 0 1em;
-  justify-content: space-between;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2 );
-  background-color: whitesmoke;
-  opacity: 0; /* Commencez par rendre le header invisible */
-  animation: fadeIn 1s ease forwards; /* Animation pour faire apparaître le header */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px); /* Déplacer le header vers le haut */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  padding-left: 9%;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.95); /* Assurez-vous que la couleur de fond n'est pas opaque */
 }
 
 .logo {
@@ -45,16 +35,18 @@ font-size: 25px;
   display: flex;
   gap: 47px;
   list-style: none;
+  color: gray;
 }
 
 .menuItems a:hover {
-  color: var(--color-primary);
+  color: var(--color-bg);
 }
 
 .menuItems a {
   font-size: 18px;
   color: var(--color-text);
   text-decoration: none;
+  color: gray;
 }
 
 @media screen and (max-width: 830px) {
@@ -63,6 +55,8 @@ font-size: 25px;
     align-items: flex-start;
     display: flex;
     justify-content: center;
+    background-color: black;
+    z-index: 99;
   }
   .logo {
     margin-left: 5%;
@@ -89,13 +83,16 @@ font-size: 25px;
     right: 0;
     flex-direction: column;
     align-items: center;
-    gap: 13px;
+    gap: 0px;
     border-radius: 10px;
-    background: linear-gradient(0deg, rgba(25, 55, 109, 0.2) 0%, rgba(25, 55, 109, 1) 100%);
-    padding: 24px 33px;
+    background: grey;
+    padding: 15px 33px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    
   }
-
+  .menuItems a{
+    color: aliceblue;
+  }
   .menuOpen {
     display: flex;
     z-index: 1;

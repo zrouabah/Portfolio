@@ -8,11 +8,10 @@
 }
 
 .title {
-  color: var(--color-text);
+  color: gray;
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
-  text-transform: uppercase;
   padding-bottom: 37px;
 }
 
@@ -103,3 +102,10 @@
   font-family: var(--font-roboto);
   font-weight: 600;
 }
+@media screen and (max-width: 830px){
+  .skills {
+    gap:23px;
+  }
+  .skill {
+    animation-delay:none;
+}}

@@ -10,7 +10,7 @@ const Apropos = () => {
     <section className={styles.container}>
       <div className={styles.content}>
       <h1 className={styles.title}>
-          Bienvenue ! <br /> Je suis Zineb
+      À propos de moi
         </h1>
         <p className={styles.description}>{aproposData.description}</p>
 
