@@ -12,6 +12,7 @@
   align-items: center;
   padding-left: 9%;
   color: gray;
+  z-index: 99;
   background-color: rgba(255, 255, 255, 0.95); /* Assurez-vous que la couleur de fond n'est pas opaque */
 }
 
