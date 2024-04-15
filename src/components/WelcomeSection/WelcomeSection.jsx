@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './WelcomeSection.module.css';
 import { getImageUrl } from '../../utils';
-import backgroundImage from '/assets/photo_portfolio/background_image.png'; // Importez votre image de fond
+import backgroundImage from '/assets/photo_portfolio/background_image.png'; 
 
 const WelcomeSection = () => {
   const handleContactClick = () => {
@@ -21,7 +21,7 @@ const WelcomeSection = () => {
         <button className={styles.btnHere} onClick={handleContactClick}>me contacter</button>
         <button className={styles.btnDownload} onClick={handleDownloadClick}>mon CV</button>
       </div>
-      {/* L'image du modèle peut rester dans votre fichier CSS */}
+     
       <img src={getImageUrl('photo_portfolio/photo_portfolio.jpg')} alt="Photo de profil" className={styles.model} />
     </div>
   );

@@ -34,21 +34,6 @@ const Header = () => {
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-
-      {/*<div className={styles.contacts}>
-        
-        <div className={`${styles.social} ${menuOpen ? styles.menuOpen : ''}`}>
-          <a href="mailto:zineb.rouabah@hotmail.fr">
-            <img src={getImageUrl('contact/emailIcon.png')} alt="Icône email" />
-          </a>
-          <a href="https://www.linkedin.com/in/zineb-rouabah/" target="_blank">
-            <img src={getImageUrl('contact/linkedinIcon.png')} alt="Icône LinkedIn" />
-          </a>
-          <a href="https://github.com/zrouabah" target="_blank">
-            <img src={getImageUrl('contact/githubIcon.png')} alt="Icône GitHub" />
-          </a>
-        </div>
-  </div>*/}
     </nav>
   );
 };
